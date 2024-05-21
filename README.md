@@ -61,7 +61,7 @@ There are configuration that can be adjusted in the following two files, wih som
 - `sim.render` if set to `True` the simualation enviroenment will be visualize and the scenarios will be stored as a git in the `Simulated_scenarios/gifs` directory
 
 - ` action_space.kinematics` specifies the options for the ego vehcile (robot)'s kinematics, with the following options:
-  - ``holonomic`
+  - `holonomic`
   - `unicycle`
 
 
