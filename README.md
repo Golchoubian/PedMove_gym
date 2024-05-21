@@ -40,7 +40,7 @@ This repository is organized in two main folders:
 
 * `envs/`: Contatins the files for the simulation environment.
 
-* `ped_pred/`: Includes files for running inference on our pedestrian trajectory prediction model, [UAW-PCG](https://github.com/Golchoubian/PolarCollisionGrid-UncertaintyAware). =
+* `ped_pred/`: Includes files for running inference on our pedestrian trajectory prediction model, [UAW-PCG](https://github.com/Golchoubian/PolarCollisionGrid-UncertaintyAware).
 
 This simulation environmnt consist of 310 scenarios extracted from the HBS dataset, each of these scenarios corresponds to one of the vehicles presnet in this dataset. The scenarios are divided into training, testing, and validation sets. Pedestrian behaviors are be simulated using real-world data, while the ego vehicle's actions can be decided based on DRL algortihm. 
 
@@ -52,36 +52,36 @@ There are configuration that can be adjusted in the following two files, wih som
 
 * `PedMove_gym/config.py`: 
 
-- `sim.predict_method` provides three options for the the integrated prediction with the simulation environment
+    - `sim.predict_method` provides three options for the the integrated prediction with the simulation environment
+    
+      - `inferred`: Generate the pedestrians predicted trajectory based in UAW-PCG predictor model.
+      - `none`: Does not provide any prediction.
+      - `truth`: Outputs the ground truth prediction from the dataset.
 
-  - `inferred`: Generate the pedestrians predicted trajectory based in UAW-PCG predictor model.
-  - `none`: Does not provide any prediction.
-  - `truth`: Outputs the ground truth prediction from the dataset.
-
-- `sim.render` if set to `True` the simualation enviroenment will be visualize and the scenarios will be stored as a git in the `Simulated_scenarios/gifs` directory
-
-- ` action_space.kinematics` specifies the options for the ego vehcile (robot)'s kinematics, with the following options:
-  - `holonomic`
-  - `unicycle`
+    - `sim.render` if set to `True` the simualation enviroenment will be visualize and the scenarios will be stored as a git in the `Simulated_scenarios/gifs` directory
+    
+    - ` action_space.kinematics` specifies the options for the ego vehcile (robot)'s kinematics, with the following options:
+      - `holonomic`
+      - `unicycle`
 
 
 * `PedMove_gym/arguments.py`: 
 
-- `phase` specifies the phase from which the scenarios will be executed:
-  - `train`
-  - `val` (validation)
-  - `test`
-
-- `test_case` specfies the scenarios to runs within the specifed phase:
-  - `-1`: Runs all scenarios within that phase
-  - `A single number in raneg: [0-310]`: Run the specified scenario number
-
-    Note: A valid scenario number should be enterd for the specifed phase based no the following division made during the scenario split for train, validation, and test:
-    - validation: scenario numbers: 0 - 48
-    - train: scenario numbers: 48 - 247
-    - test: scenario numbers: 248 - 310
-
-- `consider-veh` is a boolean specifying whether to also consider and visualize other vehicles in the scenario other than the eog vehicle or not
+    - `phase` specifies the phase from which the scenarios will be executed:
+      - `train`
+      - `val` (validation)
+      - `test`
+    
+    - `test_case` specfies the scenarios to runs within the specifed phase:
+      - `-1`: Runs all scenarios within that phase
+      - `A single number in raneg: [0-310]`: Run the specified scenario number
+    
+        Note: A valid scenario number should be enterd for the specifed phase based no the following division made during the scenario split for train, validation, and test:
+        - validation: scenario numbers: 0 - 48
+        - train: scenario numbers: 48 - 247
+        - test: scenario numbers: 248 - 310
+    
+    - `consider-veh` is a boolean specifying whether to also consider and visualize other vehicles in the scenario other than the eog vehicle or not
 
   
 
