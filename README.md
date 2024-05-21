@@ -6,7 +6,7 @@ This repository provides a 2D gym environment that simulates pedestrian trajecto
 A unique feature of this gym environment is its integration with a data-driven pedestrian trajectory predictor algorithm called Uncertainty-aware Polar Collision Grid (UAW-PCG). As a result, the [PCG](https://github.com/Golchoubian/PolarCollisionGrid-UncertaintyAware) algorithm's predictions are included as example states within this simulation environment.
 
 <div style="display: block; margin: 0 auto; text-align: center; padding-bottom: 200px;">
-    <img src="images/scenario295.gif" alt="scenario295" width="400"> 
+    <img src="images/scenario295.gif" alt="scenario295" width="500"> 
     <img src="images/HBS.png" alt="HBS" width="400"> 
     <figcaption>[1]</figcaption>
 </div>
