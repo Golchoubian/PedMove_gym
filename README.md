@@ -6,8 +6,8 @@ This repository provides a 2D gym environment that simulates pedestrian trajecto
 A unique feature of this gym environment is its integration with a data-driven pedestrian trajectory predictor algorithm called Uncertainty-aware Polar Collision Grid (UAW-PCG). As a result, the [PCG](https://github.com/Golchoubian/PolarCollisionGrid-UncertaintyAware) algorithm's predictions are included as example states within this simulation environment.
 
 <div style="display: block; margin: 0 auto; text-align: center; padding-bottom: 200px;">
-    <img src="images/scenario295.gif" alt="scenario295" width="500"> 
-    <img src="images/HBS.png" alt="HBS" width="565"> 
+    <img src="images/scenario295.gif" alt="scenario295" width="400"> 
+    <img src="images/HBS.png" alt="HBS" width="400"> 
     <figcaption>[1]</figcaption>
 </div>
 
@@ -15,7 +15,9 @@ A unique feature of this gym environment is its integration with a data-driven p
 This gym environment was used in our paper to train a deep reinforcement learning-based navigation algorithm for an autonomous vehicle navigating among pedestrians in a shared space. It is part of the complete [code](https://github.com/Golchoubian/UncertaintyAware_DRL_CrowdNav) provided for implementing our algorithm within the paper and can also be used for other reinforcement learning algorithms.
 
 
+<font size="1">
 [1]: Cheng, Hao, and Monika Sester. "Modeling mixed traffic in shared space using lstm with probability density mapping." In 2018 21st International Conference on Intelligent Transportation Systems (ITSC), pp. 3898-3904. IEEE, 2018.
+</font>
 
 ## Installation
 
