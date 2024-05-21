@@ -65,10 +65,7 @@ There are configuration that can be adjusted in the following two files, wih som
 
 * `PedMove_gym/arguments.py`: 
 
-    - `phase` specifies the phase from which the scenarios will be executed:
-      - `train`
-      - `val` (validation)
-      - `test`
+    - `phase` specifies the phase from which the scenarios will be executed (`train`, `val`, `test`)
     
     - `test_case` specfies the scenarios to runs within the specifed phase:
       - `-1`: Runs all scenarios within that phase
