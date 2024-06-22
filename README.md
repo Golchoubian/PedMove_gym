@@ -3,9 +3,9 @@
 This repository provides a 2D gym environment that simulates pedestrian trajectories in the presence of vehicles within a shared space. It is designed for training and testing decision-making algorithms for the ego vehicle navigating among pedestrians. The pedestrian trajectory behaviors are derived from the [HBS dataset](https://leopard.tu-braunschweig.de/receive/dbbs_mods_00069907), which was captured in a shared space in Germany.
 
 
-A unique feature of this gym environment is its integration with a data-driven pedestrian trajectory predictor algorithm called Uncertainty-aware Polar Collision Grid (UAW-PCG). As a result, the [PCG](https://github.com/Golchoubian/PolarCollisionGrid-UncertaintyAware) algorithm's predictions are included as example states within this simulation environment.
+A unique feature of this gym environment is its integration with the uncertainty-aware data-driven pedestrian trajectory predictor algorithm called Uncertainty-aware Polar Collision Grid (UAW-PCG). As a result, the [UAW-PCG](https://github.com/Golchoubian/PolarCollisionGrid-UncertaintyAware) algorithm's predictions are included as example states within this simulation environment.
 
-This gym environment was used in our paper to train a deep reinforcement learning-based navigation algorithm for an autonomous vehicle navigating among pedestrians in a shared space. It is part of the complete [code](https://github.com/Golchoubian/UncertaintyAware_DRL_CrowdNav) provided for implementing our algorithm within the paper and can also be used for other reinforcement learning algorithms.
+This gym environment was used in our [paper](https://ieeexplore.ieee.org/abstract/document/10538404) to train a deep reinforcement learning-based navigation algorithm for an autonomous vehicle navigating among pedestrians in a shared space. It is part of the complete [code](https://github.com/Golchoubian/UncertaintyAware_DRL_CrowdNav) provided for implementing our algorithm within the paper and can also be readily used for the development and evaluation of other reinforcement learning algorithms for autonomous vehicle navigation in crowded environments.
 
 
 <div style="display: block; margin: 0 auto; text-align: center; padding-bottom: 200px;">
