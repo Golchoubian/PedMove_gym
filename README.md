@@ -50,40 +50,37 @@ A key advantage of this environment is its incorporation of real human-driven tr
 
 ## Usage
 
-There are configuration that can be adjusted in the following two files, wih some of the key paramters explained as follows:
+This section explains the configuration options available in two key files:
 
-* `PedMove_gym/config.py`: 
+* `PedMove_gym/config.py`: This file allows you to adjust various simulation parameters. Here are some key options:
 
-    - `sim.predict_method` provides three options for the the integrated prediction with the simulation environment
+    - `sim.predict_method`: This parameter controls the pedestrian trajectory prediction integration within the simulation environment. It offers three options:
     
       - `inferred`: Generate the pedestrians predicted trajectory based in UAW-PCG predictor model.
-      - `none`: Does not provide any prediction.
-      - `truth`: Outputs the ground truth prediction from the dataset.
+      - `none`: Disables any prediction, relying only on the current state.
+      - `truth`: Outputs the ground truth prediction from the dataset (for evaluation purposes).
 
-    - `sim.render` if set to `True` the simualation enviroenment will be visualize and the scenarios will be stored as a git in the `Simulated_scenarios/gifs` directory
+    - `sim.render`: Set this parameter to `True` to visualize the simulation environment. Scenarios will be stored as GIFs in the `Simulated_scenarios/gifs` directory.
     
-    - ` action_space.kinematics` specifies the options for the ego vehcile (robot)'s kinematics, including `holonomic` and `unicycle`
-
-
-* `PedMove_gym/arguments.py`: 
-
-    - `phase` specifies the phase from which the scenarios will be executed (`train`, `val`, `test`)
+    - `action_space.kinematics`: sThis parameter defines the kinematics options for the ego vehicle (robot), including `holonomic` and `unicycle`
     
-    - `test_case` specfies the scenarios to runs within the specifed phase:
-      - `-1`: Runs all scenarios within that phase
-      - `A single number in raneg: [0-310]`: Run the specified scenario number
+
+* `PedMove_gym/arguments.py`: This file allows you to specify scenarios and execution phases. Here are some key options:
+
+    - `phase`: This parameter defines the execution phase for the scenarios: (`train`, `val`, `test`)
+ 
+    - `test_case`: This parameter specifies the scenarios to run within the chosen phase:
+      - `-1`: Runs all scenarios within the chosen phase.
+      - `A single number in raneg: [0-310]`: Runs the specified scenario number.
     
-        Note: A valid scenario number should be enterd for the specifed phase based no the following division made during the scenario split for train, validation, and test:
+        Note: Enter a valid scenario number based on the following split for train, validation, and test sets::
         - validation: scenario numbers: 0 - 48
         - train: scenario numbers: 48 - 247
         - test: scenario numbers: 248 - 310
     
-    - `consider-veh` is a boolean specifying whether to also consider and visualize other vehicles in the scenario other than the eog vehicle or not
+    - `consider-veh`: This boolean parameter specifies whether to include and visualize other vehicles in the scenario besides the ego vehicle.
 
-  
-
-As this repository is focused only on providing the gym simulatino environment of the pedestrians real traejctry behavior in presnece of vehciles in a shared environment while being integrated with the predestrian trajectroy prediction model, the actios on the ego vehicle is based on the human-driver's real trajectorty in the dataset with the `robot.human_driver` being set to `True`. However, a decision-making algorith can be placed for outputiing the action. An example of such an algorithm can be find in [UncertaintyAware_DRL_CrowdNav](https://github.com/Golchoubian/UncertaintyAware_DRL_CrowdNav).
-
+This repository focuses on providing a Gym simulation environment for pedestrian trajectory behavior in the presence of vehicles within a shared environment. It also explores the integration of this environment with a pedestrian trajectory prediction model. Therfore, currently, this file uses real driver trajectories from the dataset for action calculation of the ego vehicle (by setting `robot.human_driver` to `True`). However, the framework allows for the replacement of this behavior with a decision-making algorithm. An example of such an algorithm can be found in [UncertaintyAware_DRL_CrowdNav](https://github.com/Golchoubian/UncertaintyAware_DRL_CrowdNav).
 
 
 ## Citation
