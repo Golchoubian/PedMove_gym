@@ -62,7 +62,7 @@ This section explains the configuration options available in two key files:
 
     - `sim.render`: Set this parameter to `True` to visualize the simulation environment. Scenarios will be stored as GIFs in the `Simulated_scenarios/gifs` directory.
     
-    - `action_space.kinematics`: sThis parameter defines the kinematics options for the ego vehicle (robot), including `holonomic` and `unicycle`
+    - `action_space.kinematics`: This parameter defines the kinematics options for the ego vehicle (robot), including `holonomic` and `unicycle`
     
 
 * `PedMove_gym/arguments.py`: This file allows you to specify scenarios and execution phases. Here are some key options:
