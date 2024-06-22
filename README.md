@@ -15,11 +15,8 @@ A unique feature of this gym environment is its integration with a data-driven p
 This gym environment was used in our paper to train a deep reinforcement learning-based navigation algorithm for an autonomous vehicle navigating among pedestrians in a shared space. It is part of the complete [code](https://github.com/Golchoubian/UncertaintyAware_DRL_CrowdNav) provided for implementing our algorithm within the paper and can also be used for other reinforcement learning algorithms.
 
 
-<font size="1">
-[1]: Cheng, Hao, and Monika Sester. "Modeling mixed traffic in shared space using lstm with probability density mapping." In 2018 21st International Conference on Intelligent Transportation Systems (ITSC), pp. 3898-3904. IEEE, 2018.
-</font>
-
-[1]: Cheng, Hao, Fatema T. Johora, Monika Sester, and Jörg P. Müller. "Trajectory modelling in shared spaces: Expert-based vs. deep learning approach?." In Multi-Agent-Based Simulation XXI: 21st International Workshop, MABS 2020, Auckland, New Zealand, May 10, 2020, Revised Selected Papers 21, pp. 13-27. Springer International Publishing, 2021.
+[1]: Trajectories of a shared space in Hamburg (HBS dataset) 
+Cheng, Hao, Fatema T. Johora, Monika Sester, and Jörg P. Müller. "Trajectory modelling in shared spaces: Expert-based vs. deep learning approach?." In Multi-Agent-Based Simulation XXI: 21st International Workshop, MABS 2020, Auckland, New Zealand, May 10, 2020, Revised Selected Papers 21, pp. 13-27. Springer International Publishing, 2021.
 
 ## Installation
 
