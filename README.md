@@ -86,12 +86,11 @@ As this repository is focused only on providing the gym simulatino environment o
 
 ## Citation
 ```bibtex
-@inproceedings{golchoubian2023polar,
-  title={Polar Collision Grids: Effective Interaction Modelling for Pedestrian Trajectory Prediction in Shared Space Using Collision Checks},
+@article{golchoubian2024uncertainty,
+  title={Uncertainty-Aware DRL for Autonomous Vehicle Crowd Navigation in Shared Space},
   author={Golchoubian, Mahsa and Ghafurian, Moojan and Dautenhahn, Kerstin and Azad, Nasser Lashgarian},
-  booktitle={2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)},
-  pages={791--798},
-  year={2023},
-  organization={IEEE}
+  journal={IEEE Transactions on Intelligent Vehicles},
+  year={2024},
+  publisher={IEEE}
 }
 ```
