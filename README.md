@@ -17,7 +17,7 @@ This gym environment was used in our paper to train a deep reinforcement learnin
 
 [1]: Trajectories of a shared space in Hamburg (HBS dataset) 
 
-Cheng, Hao, Fatema T. Johora, Monika Sester, and Jörg P. Müller. "Trajectory modelling in shared spaces: Expert-based vs. deep learning approach?." In Multi-Agent-Based Simulation XXI: 21st International Workshop, MABS 2020, Auckland, New Zealand, May 10, 2020, Revised Selected Papers 21, pp. 13-27. Springer International Publishing, 2021.
+Image taken from: Cheng, Hao, Fatema T. Johora, Monika Sester, and Jörg P. Müller. "Trajectory modelling in shared spaces: Expert-based vs. deep learning approach?." In Multi-Agent-Based Simulation XXI: 21st International Workshop, MABS 2020, Auckland, New Zealand, May 10, 2020, Revised Selected Papers 21, pp. 13-27. Springer International Publishing, 2021.
 
 ## Installation
 
